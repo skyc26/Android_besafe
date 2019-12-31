@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.register.RegisterActivity">
+
+    <include
+        android:id="@+id/my_tBar"
+        layout="@layout/ui_comment_title" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <net.android.besafeapp.view.FrameEditText
+                    android:id="@+id/frame_username"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    app:hind="请输入用户姓名"
+                    app:text="姓名" />
+
+                <net.android.besafeapp.view.FrameEditText
+                    android:id="@+id/frame_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    app:hind="请输入用户姓名"
+                    app:text="姓名" />
+                <!--描述-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp40"
+                    android:layout_marginLeft="@dimen/dp10"
+                    android:layout_marginTop="@dimen/dp10"
+                    android:layout_marginRight="@dimen/dp10"
+                    android:background="@drawable/shape_frame_edit"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="70dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="性别"
+                        android:textColor="@color/color_33"
+                        android:textSize="@dimen/sp14" />
+
+                    <TextView
+                        android:id="@+id/tv_sex"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/dp10"
+                        android:background="@null"
+                        android:gravity="center_vertical"
+                        android:hint="请选择性别"
+                        android:textSize="@dimen/sp14" />
+                </LinearLayout>
+
+                <!--租金-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp40"
+                    android:layout_marginLeft="@dimen/dp10"
+                    android:layout_marginTop="@dimen/dp10"
+                    android:layout_marginRight="@dimen/dp10"
+                    android:background="@drawable/shape_frame_edit"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="70dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="时间"
+                        android:textColor="@color/color_33"
+                        android:textSize="@dimen/sp14" />
+
+                    <TextView
+                        android:id="@+id/tv_time"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/dp10"
+                        android:background="@null"
+                        android:gravity="center_vertical"
+                        android:hint="请选择时间"
+                        android:textSize="@dimen/sp14" />
+                </LinearLayout>
+
+                <!--租金-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp40"
+                    android:layout_marginLeft="@dimen/dp10"
+                    android:layout_marginTop="@dimen/dp10"
+                    android:layout_marginRight="@dimen/dp10"
+                    android:background="@drawable/shape_frame_edit"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="70dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="所在位置"
+                        android:textColor="@color/color_33"
+                        android:textSize="@dimen/sp14" />
+
+                    <TextView
+                        android:id="@+id/tv_location"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/dp10"
+                        android:background="@null"
+                        android:gravity="center_vertical"
+                        android:hint="当前位置"
+                        android:textSize="@dimen/sp14" />
+                </LinearLayout>
+
+
+                <!--描述-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp40"
+                    android:layout_marginLeft="@dimen/dp10"
+                    android:layout_marginTop="@dimen/dp10"
+                    android:layout_marginRight="@dimen/dp10"
+                    android:background="@drawable/shape_frame_edit"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="70dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:layout_marginLeft="@dimen/dp10"
+                        android:text="类别"
+                        android:textColor="@color/color_33"
+                        android:textSize="@dimen/sp14" />
+
+                    <TextView
+                        android:id="@+id/tv_category"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/dp10"
+                        android:background="@null"
+                        android:gravity="center_vertical"
+                        android:hint="请选择类别"
+                        android:textSize="@dimen/sp14" />
+                </LinearLayout>
+
+                <!--描述-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp10"
+                    android:layout_marginTop="@dimen/dp10"
+                    android:layout_marginRight="@dimen/dp10"
+                    android:background="@drawable/shape_frame_edit"
+                    android:orientation="vertical"
+                    android:padding="@dimen/dp10">
+
+                    <TextView
+                        android:layout_width="70dp"
+                        android:layout_height="match_parent"
+                        android:text="描述"
+                        android:textColor="@color/color_33"
+                        android:layout_marginLeft="5dp"
+                        android:textSize="@dimen/sp14" />
+
+                    <TextView
+                        android:id="@+id/ed_description"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp40"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:background="@null"
+                        android:gravity="top"
+                        android:hint="请添加描述"
+                        android:layout_marginLeft="5dp"
+                        android:lines="3"
+                        android:paddingTop="5dp"
+                        android:textSize="@dimen/sp14" />
+                </LinearLayout>
+                <ImageView
+                    android:id="@+id/item_photo"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_margin="@dimen/dp10"
+                    android:src="@mipmap/icon_add" />
+
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+
+        <Button
+            android:id="@+id/btn_issue"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp40"
+            android:layout_marginTop="@dimen/dp60"
+            android:layout_gravity="bottom"
+            android:background="@drawable/login_gradient_bg"
+            android:text="审 核"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp16" />
+
+       <ImageView
+           android:id="@+id/iv_state"
+           android:layout_width="120dp"
+           android:layout_height="120dp"
+           android:layout_gravity="center"
+           android:layout_marginBottom="@dimen/dp40" />
+    </FrameLayout>
+</LinearLayout>

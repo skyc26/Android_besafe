@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <com.youth.banner.Banner
+            android:id="@+id/banner"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:text="欢迎使用有防无患"
+            android:textColor="@color/color_33"
+            android:textSize="@dimen/sp18" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="120dp"
+        android:gravity="bottom"
+        android:layout_gravity="bottom"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp40"
+            android:layout_marginLeft="@dimen/dp10"
+            android:layout_marginTop="@dimen/dp10"
+            android:layout_marginRight="@dimen/dp10"
+            android:layout_weight="1.0"
+            android:background="@drawable/login_gradient_bg"
+            android:text="用户登录"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp16" />
+
+        <Button
+            android:id="@+id/btn_manager"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp40"
+            android:layout_marginLeft="@dimen/dp10"
+            android:layout_marginTop="@dimen/dp10"
+            android:layout_marginRight="@dimen/dp10"
+            android:layout_weight="1.0"
+            android:background="@drawable/login_gradient_bg"
+            android:text="管理登录"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp16" />
+
+    </LinearLayout>
+
+</FrameLayout>

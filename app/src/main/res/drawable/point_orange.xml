@@ -1,0 +1,5 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval">  // 形状
+    <solid android:color="@color/orange"/>  // 颜色
+    <size android:height="8dp" android:width="8dp"/>  // 宽高
+</shape>
