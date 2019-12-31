@@ -1,0 +1,7 @@
+#Fri Dec 27 23:14:37 CST 2019
+base.0=E\:\\grade3\\android\\BeSafeApp\\app\\build\\intermediates\\dex\\release\\mergeDexRelease\\out\\classes.dex
+path.1=classes2.dex
+renamed.1=classes2.dex
+path.0=classes.dex
+renamed.0=classes.dex
+base.1=E\:\\grade3\\android\\BeSafeApp\\app\\build\\intermediates\\dex\\release\\mergeDexRelease\\out\\classes2.dex

@@ -1,0 +1,4 @@
+# Referenced at E:\grade3\android\BeSafeApp\app\build\intermediates\merged_manifests\debug\AndroidManifest.xml:39
+-keep class androidx.core.app.CoreComponentFactory { <init>(); }
+# Referenced at E:\grade3\android\BeSafeApp\app\build\intermediates\merged_manifests\debug\AndroidManifest.xml:39
+-keep class net.android.besafeapp.MyApplication { <init>(); }

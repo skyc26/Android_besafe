@@ -1,0 +1,259 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="net.android.besafeapp"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="16"
+8-->E:\grade3\android\BeSafeApp\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="29" />
+9-->E:\grade3\android\BeSafeApp\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.VIBRATE" />
+11-->E:\grade3\android\BeSafeApp\app\src\main\AndroidManifest.xml:6:5-66
+11-->E:\grade3\android\BeSafeApp\app\src\main\AndroidManifest.xml:6:22-63
+12    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+12-->E:\grade3\android\BeSafeApp\app\src\main\AndroidManifest.xml:7:5-71
+12-->E:\grade3\android\BeSafeApp\app\src\main\AndroidManifest.xml:7:22-68
+13    <uses-permission android:name="android.permission.CAMERA" />
+13-->E:\grade3\android\BeSafeApp\app\src\main\AndroidManifest.xml:8:5-65
+13-->E:\grade3\android\BeSafeApp\app\src\main\AndroidManifest.xml:8:22-62
+14    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" />
+14-->E:\grade3\android\BeSafeApp\app\src\main\AndroidManifest.xml:9:5-11:60
+14-->E:\grade3\android\BeSafeApp\app\src\main\AndroidManifest.xml:10:9-63
+15    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+15-->E:\grade3\android\BeSafeApp\app\src\main\AndroidManifest.xml:12:5-81
+15-->E:\grade3\android\BeSafeApp\app\src\main\AndroidManifest.xml:12:22-78
+16    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+16-->E:\grade3\android\BeSafeApp\app\src\main\AndroidManifest.xml:13:5-80
+16-->E:\grade3\android\BeSafeApp\app\src\main\AndroidManifest.xml:13:22-77
+17    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+17-->E:\grade3\android\BeSafeApp\app\src\main\AndroidManifest.xml:14:5-16:47
+17-->E:\grade3\android\BeSafeApp\app\src\main\AndroidManifest.xml:15:9-68
+18    <uses-permission android:name="android.permission.GET_TASKS" />
+18-->E:\grade3\android\BeSafeApp\app\src\main\AndroidManifest.xml:17:5-68
+18-->E:\grade3\android\BeSafeApp\app\src\main\AndroidManifest.xml:17:22-65
+19    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+19-->E:\grade3\android\BeSafeApp\app\src\main\AndroidManifest.xml:18:5-80
+19-->E:\grade3\android\BeSafeApp\app\src\main\AndroidManifest.xml:18:22-77
+20    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" /> <!-- 这个权限用于进行网络定位 -->
+20-->E:\grade3\android\BeSafeApp\app\src\main\AndroidManifest.xml:19:5-81
+20-->E:\grade3\android\BeSafeApp\app\src\main\AndroidManifest.xml:19:22-78
+21    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" /> <!-- 这个权限用于访问GPS定位 -->
+21-->E:\grade3\android\BeSafeApp\app\src\main\AndroidManifest.xml:20:5-81
+21-->E:\grade3\android\BeSafeApp\app\src\main\AndroidManifest.xml:20:22-78
+22    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" /> <!-- 用于访问wifi网络信息，wifi信息会用于进行网络定位 -->
+22-->E:\grade3\android\BeSafeApp\app\src\main\AndroidManifest.xml:21:5-79
+22-->E:\grade3\android\BeSafeApp\app\src\main\AndroidManifest.xml:21:22-76
+23    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" /> <!-- 写入扩展存储，向扩展卡写入数据，用于写入离线定位数据 -->
+23-->E:\grade3\android\BeSafeApp\app\src\main\AndroidManifest.xml:22:5-76
+23-->E:\grade3\android\BeSafeApp\app\src\main\AndroidManifest.xml:22:22-73
+24
+25
+26    <!-- 允许联网 -->
+27    <uses-permission android:name="android.permission.INTERNET" />
+27-->E:\grade3\android\BeSafeApp\app\src\main\AndroidManifest.xml:25:5-67
+27-->E:\grade3\android\BeSafeApp\app\src\main\AndroidManifest.xml:25:22-64
+28    <!-- 获取GSM（2g）、WCDMA（联通3g）等网络状态的信息 -->
+29    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+29-->E:\grade3\android\BeSafeApp\app\src\main\AndroidManifest.xml:27:5-79
+29-->E:\grade3\android\BeSafeApp\app\src\main\AndroidManifest.xml:27:22-76
+30    <!-- 获取wifi网络状态的信息 -->
+31    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+31-->E:\grade3\android\BeSafeApp\app\src\main\AndroidManifest.xml:29:5-76
+31-->E:\grade3\android\BeSafeApp\app\src\main\AndroidManifest.xml:29:22-73
+32    <!-- 保持CPU 运转，屏幕和键盘灯有可能是关闭的,用于文件上传和下载 -->
+33    <uses-permission android:name="android.permission.WAKE_LOCK" />
+33-->E:\grade3\android\BeSafeApp\app\src\main\AndroidManifest.xml:31:5-68
+33-->E:\grade3\android\BeSafeApp\app\src\main\AndroidManifest.xml:31:22-65
+34    <!-- 获取sd卡写的权限，用于文件上传和下载 -->
+35    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+35-->E:\grade3\android\BeSafeApp\app\src\main\AndroidManifest.xml:12:5-81
+35-->E:\grade3\android\BeSafeApp\app\src\main\AndroidManifest.xml:12:22-78
+36    <!-- 允许读取手机状态 用于创建BmobInstallation -->
+37    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+37-->E:\grade3\android\BeSafeApp\app\src\main\AndroidManifest.xml:35:5-75
+37-->E:\grade3\android\BeSafeApp\app\src\main\AndroidManifest.xml:35:22-72
+38
+39    <application
+39-->E:\grade3\android\BeSafeApp\app\src\main\AndroidManifest.xml:37:5-80:19
+40        android:name="net.android.besafeapp.MyApplication"
+40-->E:\grade3\android\BeSafeApp\app\src\main\AndroidManifest.xml:38:9-38
+41        android:allowBackup="true"
+41-->E:\grade3\android\BeSafeApp\app\src\main\AndroidManifest.xml:39:9-35
+42        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+42-->[androidx.core:core:1.1.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\e9dab9c67c1ee3668e0bbf86c6d8cbd8\core-1.1.0\AndroidManifest.xml:24:18-86
+43        android:debuggable="true"
+44        android:icon="@mipmap/ic_launcher"
+44-->E:\grade3\android\BeSafeApp\app\src\main\AndroidManifest.xml:40:9-43
+45        android:label="@string/app_name"
+45-->E:\grade3\android\BeSafeApp\app\src\main\AndroidManifest.xml:41:9-41
+46        android:networkSecurityConfig="@xml/network_security_config"
+46-->E:\grade3\android\BeSafeApp\app\src\main\AndroidManifest.xml:42:9-69
+47        android:roundIcon="@mipmap/ic_launcher_round"
+47-->E:\grade3\android\BeSafeApp\app\src\main\AndroidManifest.xml:43:9-54
+48        android:supportsRtl="true"
+48-->E:\grade3\android\BeSafeApp\app\src\main\AndroidManifest.xml:44:9-35
+49        android:testOnly="true"
+50        android:theme="@style/AppTheme" >
+50-->E:\grade3\android\BeSafeApp\app\src\main\AndroidManifest.xml:45:9-40
+51        <activity android:name="net.android.besafeapp.ui.details.InfoDetailsActivity" />
+51-->E:\grade3\android\BeSafeApp\app\src\main\AndroidManifest.xml:46:9-77
+51-->E:\grade3\android\BeSafeApp\app\src\main\AndroidManifest.xml:46:19-65
+52        <activity android:name="net.android.besafeapp.ui.login.LoginActivity" />
+52-->E:\grade3\android\BeSafeApp\app\src\main\AndroidManifest.xml:47:9-60
+52-->E:\grade3\android\BeSafeApp\app\src\main\AndroidManifest.xml:47:19-57
+53        <activity android:name="net.android.besafeapp.ui.report.ReportActivity" />
+53-->E:\grade3\android\BeSafeApp\app\src\main\AndroidManifest.xml:48:9-62
+53-->E:\grade3\android\BeSafeApp\app\src\main\AndroidManifest.xml:48:19-59
+54        <activity android:name="net.android.besafeapp.ui.ChoseLocationActivity" />
+54-->E:\grade3\android\BeSafeApp\app\src\main\AndroidManifest.xml:49:9-62
+54-->E:\grade3\android\BeSafeApp\app\src\main\AndroidManifest.xml:49:19-59
+55        <activity android:name="net.android.besafeapp.ui.roles.ChoseRolesActivity" >
+55-->E:\grade3\android\BeSafeApp\app\src\main\AndroidManifest.xml:50:9-56:20
+55-->E:\grade3\android\BeSafeApp\app\src\main\AndroidManifest.xml:50:19-62
+56            <intent-filter>
+56-->E:\grade3\android\BeSafeApp\app\src\main\AndroidManifest.xml:51:13-55:29
+57                <action android:name="android.intent.action.MAIN" />
+57-->E:\grade3\android\BeSafeApp\app\src\main\AndroidManifest.xml:52:17-69
+57-->E:\grade3\android\BeSafeApp\app\src\main\AndroidManifest.xml:52:25-66
+58
+59                <category android:name="android.intent.category.LAUNCHER" />
+59-->E:\grade3\android\BeSafeApp\app\src\main\AndroidManifest.xml:54:17-77
+59-->E:\grade3\android\BeSafeApp\app\src\main\AndroidManifest.xml:54:27-74
+60            </intent-filter>
+61        </activity>
+62        <activity android:name="net.android.besafeapp.ui.main.MainActivity" />
+62-->E:\grade3\android\BeSafeApp\app\src\main\AndroidManifest.xml:57:9-58
+62-->E:\grade3\android\BeSafeApp\app\src\main\AndroidManifest.xml:57:19-55
+63
+64        <provider
+65            android:name="androidx.core.content.FileProvider"
+65-->E:\grade3\android\BeSafeApp\app\src\main\AndroidManifest.xml:60:13-62
+66            android:authorities="net.android.besafeapp.provider"
+66-->E:\grade3\android\BeSafeApp\app\src\main\AndroidManifest.xml:61:13-60
+67            android:exported="false"
+67-->E:\grade3\android\BeSafeApp\app\src\main\AndroidManifest.xml:62:13-37
+68            android:grantUriPermissions="true" >
+68-->E:\grade3\android\BeSafeApp\app\src\main\AndroidManifest.xml:63:13-47
+69            <meta-data
+69-->E:\grade3\android\BeSafeApp\app\src\main\AndroidManifest.xml:64:13-66:54
+70                android:name="android.support.FILE_PROVIDER_PATHS"
+70-->E:\grade3\android\BeSafeApp\app\src\main\AndroidManifest.xml:65:17-67
+71                android:resource="@xml/file_paths" />
+71-->E:\grade3\android\BeSafeApp\app\src\main\AndroidManifest.xml:66:17-51
+72        </provider> <!-- SDK 核心功能 -->
+73        <provider
+73-->E:\grade3\android\BeSafeApp\app\src\main\AndroidManifest.xml:68:9-70:79
+74            android:name="cn.bmob.v3.util.BmobContentProvider"
+74-->E:\grade3\android\BeSafeApp\app\src\main\AndroidManifest.xml:69:13-63
+75            android:authorities="net.android.besafeapp.BmobContentProvider" />
+75-->E:\grade3\android\BeSafeApp\app\src\main\AndroidManifest.xml:70:13-76
+76
+77        <meta-data
+77-->E:\grade3\android\BeSafeApp\app\src\main\AndroidManifest.xml:72:9-74:64
+78            android:name="com.baidu.lbsapi.API_KEY"
+78-->E:\grade3\android\BeSafeApp\app\src\main\AndroidManifest.xml:73:13-52
+79            android:value="6o0dQAncOM0FmnTY8eVuE0fTfEKhAHKj" />
+79-->E:\grade3\android\BeSafeApp\app\src\main\AndroidManifest.xml:74:13-61
+80
+81        <service
+81-->E:\grade3\android\BeSafeApp\app\src\main\AndroidManifest.xml:76:9-79:41
+82            android:name="com.baidu.location.f"
+82-->E:\grade3\android\BeSafeApp\app\src\main\AndroidManifest.xml:77:13-48
+83            android:enabled="true"
+83-->E:\grade3\android\BeSafeApp\app\src\main\AndroidManifest.xml:78:13-35
+84            android:process=":remote" />
+84-->E:\grade3\android\BeSafeApp\app\src\main\AndroidManifest.xml:79:13-38
+85
+86        <provider
+86-->[com.github.LuckSiege.PictureSelector:picture_library:v2.2.3] C:\Users\win\.gradle\caches\transforms-2\files-2.1\6caf1a66ba2eb756ca54ef033468dba7\jetified-picture_library-v2.2.3\AndroidManifest.xml:12:9-20:20
+87            android:name="com.luck.picture.lib.PictureFileProvider"
+87-->[com.github.LuckSiege.PictureSelector:picture_library:v2.2.3] C:\Users\win\.gradle\caches\transforms-2\files-2.1\6caf1a66ba2eb756ca54ef033468dba7\jetified-picture_library-v2.2.3\AndroidManifest.xml:13:13-68
+88            android:authorities="net.android.besafeapp.provider"
+88-->[com.github.LuckSiege.PictureSelector:picture_library:v2.2.3] C:\Users\win\.gradle\caches\transforms-2\files-2.1\6caf1a66ba2eb756ca54ef033468dba7\jetified-picture_library-v2.2.3\AndroidManifest.xml:14:13-60
+89            android:exported="false"
+89-->[com.github.LuckSiege.PictureSelector:picture_library:v2.2.3] C:\Users\win\.gradle\caches\transforms-2\files-2.1\6caf1a66ba2eb756ca54ef033468dba7\jetified-picture_library-v2.2.3\AndroidManifest.xml:15:13-37
+90            android:grantUriPermissions="true" >
+90-->[com.github.LuckSiege.PictureSelector:picture_library:v2.2.3] C:\Users\win\.gradle\caches\transforms-2\files-2.1\6caf1a66ba2eb756ca54ef033468dba7\jetified-picture_library-v2.2.3\AndroidManifest.xml:16:13-47
+91            <meta-data
+91-->E:\grade3\android\BeSafeApp\app\src\main\AndroidManifest.xml:64:13-66:54
+92                android:name="android.support.FILE_PROVIDER_PATHS"
+92-->E:\grade3\android\BeSafeApp\app\src\main\AndroidManifest.xml:65:17-67
+93                android:resource="@xml/file_paths" />
+93-->E:\grade3\android\BeSafeApp\app\src\main\AndroidManifest.xml:66:17-51
+94        </provider>
+95
+96        <activity
+96-->[com.github.LuckSiege.PictureSelector:picture_library:v2.2.3] C:\Users\win\.gradle\caches\transforms-2\files-2.1\6caf1a66ba2eb756ca54ef033468dba7\jetified-picture_library-v2.2.3\AndroidManifest.xml:22:9-24:55
+97            android:name="com.luck.picture.lib.PictureSelectorActivity"
+97-->[com.github.LuckSiege.PictureSelector:picture_library:v2.2.3] C:\Users\win\.gradle\caches\transforms-2\files-2.1\6caf1a66ba2eb756ca54ef033468dba7\jetified-picture_library-v2.2.3\AndroidManifest.xml:23:13-72
+98            android:windowSoftInputMode="adjustPan" />
+98-->[com.github.LuckSiege.PictureSelector:picture_library:v2.2.3] C:\Users\win\.gradle\caches\transforms-2\files-2.1\6caf1a66ba2eb756ca54ef033468dba7\jetified-picture_library-v2.2.3\AndroidManifest.xml:24:13-52
+99        <activity android:name="com.luck.picture.lib.PicturePreviewActivity" />
+99-->[com.github.LuckSiege.PictureSelector:picture_library:v2.2.3] C:\Users\win\.gradle\caches\transforms-2\files-2.1\6caf1a66ba2eb756ca54ef033468dba7\jetified-picture_library-v2.2.3\AndroidManifest.xml:25:9-80
+99-->[com.github.LuckSiege.PictureSelector:picture_library:v2.2.3] C:\Users\win\.gradle\caches\transforms-2\files-2.1\6caf1a66ba2eb756ca54ef033468dba7\jetified-picture_library-v2.2.3\AndroidManifest.xml:25:19-77
+100        <activity
+100-->[com.github.LuckSiege.PictureSelector:picture_library:v2.2.3] C:\Users\win\.gradle\caches\transforms-2\files-2.1\6caf1a66ba2eb756ca54ef033468dba7\jetified-picture_library-v2.2.3\AndroidManifest.xml:26:9-29:50
+101            android:name="com.luck.picture.lib.PictureVideoPlayActivity"
+101-->[com.github.LuckSiege.PictureSelector:picture_library:v2.2.3] C:\Users\win\.gradle\caches\transforms-2\files-2.1\6caf1a66ba2eb756ca54ef033468dba7\jetified-picture_library-v2.2.3\AndroidManifest.xml:27:13-73
+102            android:configChanges="orientation|keyboardHidden|screenSize"
+102-->[com.github.LuckSiege.PictureSelector:picture_library:v2.2.3] C:\Users\win\.gradle\caches\transforms-2\files-2.1\6caf1a66ba2eb756ca54ef033468dba7\jetified-picture_library-v2.2.3\AndroidManifest.xml:28:13-74
+103            android:screenOrientation="sensor" />
+103-->[com.github.LuckSiege.PictureSelector:picture_library:v2.2.3] C:\Users\win\.gradle\caches\transforms-2\files-2.1\6caf1a66ba2eb756ca54ef033468dba7\jetified-picture_library-v2.2.3\AndroidManifest.xml:29:13-47
+104        <activity android:name="com.luck.picture.lib.PictureExternalPreviewActivity" />
+104-->[com.github.LuckSiege.PictureSelector:picture_library:v2.2.3] C:\Users\win\.gradle\caches\transforms-2\files-2.1\6caf1a66ba2eb756ca54ef033468dba7\jetified-picture_library-v2.2.3\AndroidManifest.xml:30:9-88
+104-->[com.github.LuckSiege.PictureSelector:picture_library:v2.2.3] C:\Users\win\.gradle\caches\transforms-2\files-2.1\6caf1a66ba2eb756ca54ef033468dba7\jetified-picture_library-v2.2.3\AndroidManifest.xml:30:19-85
+105        <activity android:name="com.yalantis.ucrop.UCropActivity" />
+105-->[com.github.LuckSiege.PictureSelector:picture_library:v2.2.3] C:\Users\win\.gradle\caches\transforms-2\files-2.1\6caf1a66ba2eb756ca54ef033468dba7\jetified-picture_library-v2.2.3\AndroidManifest.xml:31:9-69
+105-->[com.github.LuckSiege.PictureSelector:picture_library:v2.2.3] C:\Users\win\.gradle\caches\transforms-2\files-2.1\6caf1a66ba2eb756ca54ef033468dba7\jetified-picture_library-v2.2.3\AndroidManifest.xml:31:19-66
+106        <activity android:name="com.yalantis.ucrop.PictureMultiCuttingActivity" />
+106-->[com.github.LuckSiege.PictureSelector:picture_library:v2.2.3] C:\Users\win\.gradle\caches\transforms-2\files-2.1\6caf1a66ba2eb756ca54ef033468dba7\jetified-picture_library-v2.2.3\AndroidManifest.xml:32:9-83
+106-->[com.github.LuckSiege.PictureSelector:picture_library:v2.2.3] C:\Users\win\.gradle\caches\transforms-2\files-2.1\6caf1a66ba2eb756ca54ef033468dba7\jetified-picture_library-v2.2.3\AndroidManifest.xml:32:19-80
+107        <activity android:name="com.luck.picture.lib.PicturePlayAudioActivity" />
+107-->[com.github.LuckSiege.PictureSelector:picture_library:v2.2.3] C:\Users\win\.gradle\caches\transforms-2\files-2.1\6caf1a66ba2eb756ca54ef033468dba7\jetified-picture_library-v2.2.3\AndroidManifest.xml:33:9-82
+107-->[com.github.LuckSiege.PictureSelector:picture_library:v2.2.3] C:\Users\win\.gradle\caches\transforms-2\files-2.1\6caf1a66ba2eb756ca54ef033468dba7\jetified-picture_library-v2.2.3\AndroidManifest.xml:33:19-79
+108        <activity
+108-->[com.blankj:utilcode:1.18.2] C:\Users\win\.gradle\caches\transforms-2\files-2.1\ecbf6a505a2fdc0faf86f341273f47bb\jetified-utilcode-1.18.2\AndroidManifest.xml:10:9-15:75
+109            android:name="com.blankj.utilcode.util.PermissionUtils$PermissionActivity"
+109-->[com.blankj:utilcode:1.18.2] C:\Users\win\.gradle\caches\transforms-2\files-2.1\ecbf6a505a2fdc0faf86f341273f47bb\jetified-utilcode-1.18.2\AndroidManifest.xml:11:13-87
+110            android:configChanges="orientation|keyboardHidden|screenSize"
+110-->[com.blankj:utilcode:1.18.2] C:\Users\win\.gradle\caches\transforms-2\files-2.1\ecbf6a505a2fdc0faf86f341273f47bb\jetified-utilcode-1.18.2\AndroidManifest.xml:12:13-74
+111            android:multiprocess="true"
+111-->[com.blankj:utilcode:1.18.2] C:\Users\win\.gradle\caches\transforms-2\files-2.1\ecbf6a505a2fdc0faf86f341273f47bb\jetified-utilcode-1.18.2\AndroidManifest.xml:13:13-40
+112            android:theme="@style/ActivityTranslucent"
+112-->[com.blankj:utilcode:1.18.2] C:\Users\win\.gradle\caches\transforms-2\files-2.1\ecbf6a505a2fdc0faf86f341273f47bb\jetified-utilcode-1.18.2\AndroidManifest.xml:14:13-55
+113            android:windowSoftInputMode="stateHidden|stateAlwaysHidden" />
+113-->[com.blankj:utilcode:1.18.2] C:\Users\win\.gradle\caches\transforms-2\files-2.1\ecbf6a505a2fdc0faf86f341273f47bb\jetified-utilcode-1.18.2\AndroidManifest.xml:15:13-72
+114
+115        <provider
+115-->[com.blankj:utilcode:1.18.2] C:\Users\win\.gradle\caches\transforms-2\files-2.1\ecbf6a505a2fdc0faf86f341273f47bb\jetified-utilcode-1.18.2\AndroidManifest.xml:17:9-25:20
+116            android:name="androidx.core.content.FileProvider4Util"
+116-->[com.blankj:utilcode:1.18.2] C:\Users\win\.gradle\caches\transforms-2\files-2.1\ecbf6a505a2fdc0faf86f341273f47bb\jetified-utilcode-1.18.2\AndroidManifest.xml:18:13-67
+117            android:authorities="net.android.besafeapp.utilcode.provider"
+117-->[com.blankj:utilcode:1.18.2] C:\Users\win\.gradle\caches\transforms-2\files-2.1\ecbf6a505a2fdc0faf86f341273f47bb\jetified-utilcode-1.18.2\AndroidManifest.xml:19:13-69
+118            android:exported="false"
+118-->[com.blankj:utilcode:1.18.2] C:\Users\win\.gradle\caches\transforms-2\files-2.1\ecbf6a505a2fdc0faf86f341273f47bb\jetified-utilcode-1.18.2\AndroidManifest.xml:20:13-37
+119            android:grantUriPermissions="true" >
+119-->[com.blankj:utilcode:1.18.2] C:\Users\win\.gradle\caches\transforms-2\files-2.1\ecbf6a505a2fdc0faf86f341273f47bb\jetified-utilcode-1.18.2\AndroidManifest.xml:21:13-47
+120            <meta-data
+120-->E:\grade3\android\BeSafeApp\app\src\main\AndroidManifest.xml:64:13-66:54
+121                android:name="android.support.FILE_PROVIDER_PATHS"
+121-->E:\grade3\android\BeSafeApp\app\src\main\AndroidManifest.xml:65:17-67
+122                android:resource="@xml/util_code_provider_paths" />
+122-->E:\grade3\android\BeSafeApp\app\src\main\AndroidManifest.xml:66:17-51
+123        </provider>
+124        <provider
+124-->[androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\3c03e0805bdfd6180afbf0af0c9cd9a0\lifecycle-process-2.1.0\AndroidManifest.xml:23:9-27:43
+125            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+125-->[androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\3c03e0805bdfd6180afbf0af0c9cd9a0\lifecycle-process-2.1.0\AndroidManifest.xml:24:13-79
+126            android:authorities="net.android.besafeapp.lifecycle-process"
+126-->[androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\3c03e0805bdfd6180afbf0af0c9cd9a0\lifecycle-process-2.1.0\AndroidManifest.xml:25:13-69
+127            android:exported="false"
+127-->[androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\3c03e0805bdfd6180afbf0af0c9cd9a0\lifecycle-process-2.1.0\AndroidManifest.xml:26:13-37
+128            android:multiprocess="true" />
+128-->[androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\3c03e0805bdfd6180afbf0af0c9cd9a0\lifecycle-process-2.1.0\AndroidManifest.xml:27:13-40
+129    </application>
+130
+131</manifest>
